@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mood Playlist Recommender</title>
+    <!-- Google Fonts: Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Header Section -->
+        <header class="header">
+            <h1>🎵 Mood Playlist Recommender</h1>
+            <p>Get songs based on your mood instantly</p>
+        </header>
+
+        <!-- Main Content -->
+        <main>
+            <section class="mood-selection">
+                <h2>How are you feeling right now?</h2>
+                
+                <div class="input-group">
+                    <select id="mood" class="styled-select">
+                        <option value="happy">Happy 😊</option>
+                        <option value="sad">Sad 😔</option>
+                        <option value="focus">Focus 🎧</option>
+                    </select>
+                </div>
+
+                <button class="action-btn" onclick="getPlaylist()">Get Playlist</button>
+            </section>
+
+            <!-- Result area as requested in Step 14 -->
+            <div id="playlistResult" class="playlist-section"></div>
+        </main>
+    </div>
+
+    <script src="/script.js"></script>
+</body>
+</html>
